@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenubackground"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    tools:context=".Activity.MainMenuActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/crd_MainMenuButtons"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@android:color/black"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_btn_battle"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:text="@string/Battle"
+                android:textColor="@android:color/white"
+                app:icon="@drawable/battleicon"
+                app:iconGravity="start"
+                app:iconSize="25dp"
+                app:iconTint="@android:color/white" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_btn_store"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="@string/Store"
+                android:textColor="@android:color/white"
+                app:icon="@drawable/store"
+                app:iconGravity="start"
+                app:iconSize="25dp"
+                app:iconTint="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_btn_bag"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:text="@string/Bag"
+                android:textColor="@android:color/white"
+                app:icon="@drawable/backpack"
+                app:iconGravity="start"
+                app:iconSize="25dp"
+                app:iconTint="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_btn_logout"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:text="@string/Logout"
+                android:textColor="@android:color/white"
+                app:icon="@drawable/logout"
+                app:iconGravity="start"
+                app:iconSize="25dp"
+                app:iconTint="@android:color/white" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

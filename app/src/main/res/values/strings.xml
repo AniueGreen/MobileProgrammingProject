@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Pokemon</string>
+
+    <string name="welcomeString">POKEMON</string>
+    <string name="Enter">Enter</string>
+    <string name="BackgroundImage">Background Image</string>
+
+
+    <!-- Battle -->
+    <string name="HP">HP : </string>
+    <string name="Name">Name : </string>
+    <string name="PlayerPokemon">Player Pokemon</string>
+    <string name="WildPokemon">Wild Pokemon</string>
+    <string name="Attack">Attack</string>
+    <string name="InitiateBattle">A wild %1$s appeared. Battle Started! </string>
+    <string name="Level">Level : </string>
+    <string name="PlayerBattleActions">%1$s used %2$s.</string>
+    <string name="WildPokemonBattleActions">Wild %1$s used %2$s.</string>
+    <string name="PlayerItemUse">%1$s used on %2$s.</string>
+    <string name="PlayerPokemonFainted">%1$s fainted</string>
+    <string name="WildPokemonFainted">Wild %1$s fainted</string>
+    <string name="MoneyEarned">You earned %1$d ¥ </string>
+    <string name="XPEarned">%1$s earned %2$d XP</string>
+    <string name="LevelUp">%1$s leveled up</string>
+
+    <!-- Register -->
+    <string name="PlayerName">Player Name</string>
+    <string name="Save">SAVE</string>
+    <string name="ChooseYourStarterPokemon">Choose Your Starter Pokemon</string>
+
+
+    <!-- Main Menu -->
+    <string name="Battle">Battle</string>
+    <string name="Store">Store</string>
+    <string name="Bag">Bag</string>
+    <string name="Logout">Logout</string>
+
+    <!-- Store -->
+    <string name="HealthPotion">Health Potion</string>
+    <string name="RevivePotion">Revive Potion</string>
+    <string name="PokeBall">Poke Ball</string>
+    <string name="MasterBall">Master Ball</string>
+    <string name="price250">250 ¥</string>
+    <string name="price500">500 ¥</string>
+    <string name="price750">750 ¥</string>
+    <string name="price1000">1000 ¥</string>
+    <string name="Plus">+</string>
+    <string name="Minus">-</string>
+    <string name="Zero">0</string>
+    <string name="Total">Total : %1$d ¥</string>
+    <string name="Balance">Balance : %1$d ¥</string>
+    <string name="Buy">BUY</string>
+
+    <string name="Owned">Owned : %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.StoreActivity"
+    android:weightSum="100"
+    android:background="@drawable/storebackground"
+    >
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/store_txt_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Store"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/store_txt_playerBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="@string/Balance"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/store_txt_totalCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="@string/Total"
+        android:textAlignment="viewEnd"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/store_btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="@string/Buy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/store_card_masterball"
+        android:layout_width="120dp"
+        android:layout_height="165dp"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/store_img_masterball"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="15dp"
+                android:contentDescription="@string/MasterBall"
+                android:scaleType="fitXY"
+                android:src="@drawable/masterball" />
+
+            <TextView
+                android:id="@+id/store_txt_masterballText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="@string/MasterBall"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/store_txt_masterball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="@string/price1000"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/store_txt_masterballQuantityDecrease"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_purple"
+                    android:text="@string/Minus"
+                    android:textAlignment="center"
+
+                    android:textColor="#FFFFFF" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/store_txt_masterballQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/white"
+                    android:text="@string/Zero" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/store_txt_masterballQuantityIncrease"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:background="#7AB645"
+                    android:text="@string/Plus"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/store_card_pokeball"
+        android:layout_width="120dp"
+        android:layout_height="165dp"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/store_img_pokeball"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="15dp"
+                android:contentDescription="@string/PokeBall"
+                android:scaleType="fitXY"
+                android:src="@drawable/pokeball" />
+
+            <TextView
+                android:id="@+id/store_txt_pokeballText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="@string/PokeBall"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/store_txt_pokeballPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="@string/price500"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/store_txt_pokeballQuantityDecrease"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@android:color/holo_purple"
+                    android:text="@string/Minus"
+                    android:textAlignment="center"
+
+                    android:textColor="#FFFFFF" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/store_txt_pokeballQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/white"
+                    android:text="@string/Zero" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/store_txt_pokeballQuantityIncrease"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:background="#7AB645"
+                    android:text="@string/Plus"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/store_card_revive"
+        android:layout_width="120dp"
+        android:layout_height="165dp"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/store_img_revive"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="15dp"
+                android:contentDescription="@string/RevivePotion"
+                android:scaleType="fitXY"
+                android:src="@drawable/revivepotion" />
+
+            <TextView
+                android:id="@+id/store_txt_revivePotionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="@string/RevivePotion"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/store_txt_revivePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="@string/price750"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/store_txt_reviveQuantityDecrease"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_purple"
+                    android:text="@string/Minus"
+                    android:textAlignment="center"
+
+                    android:textColor="#FFFFFF" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/store_txt_reviveQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/white"
+                    android:text="@string/Zero" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/store_txt_reviveQuantityIncrease"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:background="#7AB645"
+                    android:text="@string/Plus"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/store_card_health"
+        android:layout_width="120dp"
+        android:layout_height="165dp"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/store_img_healthPotion"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="15dp"
+                android:contentDescription="@string/HealthPotion"
+                android:scaleType="fitXY"
+                android:src="@drawable/healthpotion" />
+
+            <TextView
+                android:id="@+id/store_txt_healthPotionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="@string/HealthPotion"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/store_txt_healthPotionPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="@string/price250"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/store_txt_healthPotionQuantityDecrease"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@android:color/holo_purple"
+                    android:text="@string/Minus"
+                    android:textAlignment="center"
+
+                    android:textColor="#FFFFFF" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/store_txt_healthPotionQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11.85dp"
+                    android:layout_marginEnd="11.85dp"
+                    android:background="@android:color/white"
+                    android:text="@string/Zero" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/store_txt_healthPotionQuantityIncrease"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="#7AB645"
+                    android:text="@string/Plus"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
